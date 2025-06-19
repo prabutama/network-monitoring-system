@@ -15,13 +15,6 @@
       "level": 0,
       "stream": "ext://sys.stdout"
     },
-    "databaseHandler": {
-      "class": "thingsboard_gateway.tb_utility.tb_rotating_file_handler.TimedRotatingFileHandler",
-      "formatter": "LogFormatter",
-      "filename": "./logs/database.log",
-      "backupCount": 1,
-      "encoding": "utf-8"
-    },
     "serviceHandler": {
       "class": "thingsboard_gateway.tb_utility.tb_rotating_file_handler.TimedRotatingFileHandler",
       "formatter": "LogFormatter",
@@ -78,20 +71,12 @@
     }
   },
   "loggers": {
-    "database": {
-      "handlers": [
-        "databaseHandler",
-        "consoleHandler"
-      ],
-      "level": "INFO",
-      "propagate": false
-    },
     "service": {
       "handlers": [
         "serviceHandler",
         "consoleHandler"
       ],
-      "level": "INFO",
+      "level": "DEBUG",
       "propagate": false
     },
     "connector": {
@@ -99,7 +84,7 @@
         "connectorHandler",
         "consoleHandler"
       ],
-      "level": "INFO",
+      "level": "DEBUG",
       "propagate": false
     },
     "converter": {
@@ -107,7 +92,7 @@
         "converterHandler",
         "consoleHandler"
       ],
-      "level": "INFO",
+      "level": "DEBUG",
       "propagate": false
     },
     "tb_connection": {
@@ -115,7 +100,7 @@
         "tb_connectionHandler",
         "consoleHandler"
       ],
-      "level": "INFO",
+      "level": "DEBUG",
       "propagate": false
     },
     "storage": {
@@ -123,7 +108,7 @@
         "storageHandler",
         "consoleHandler"
       ],
-      "level": "INFO",
+      "level": "DEBUG",
       "propagate": false
     },
     "extension": {
@@ -131,7 +116,7 @@
         "extensionHandler",
         "consoleHandler"
       ],
-      "level": "INFO",
+      "level": "DEBUG",
       "propagate": false
     }
   },
@@ -140,5 +125,6 @@
     "handlers": [
       "consoleHandler"
     ]
-  }
+  },
+  "ts": 1750348425329
 }

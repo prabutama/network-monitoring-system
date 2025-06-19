@@ -7,6 +7,7 @@
     "latencyDebugMode": false,
     "statistics": {
       "enable": true,
+      "enableCustom": true,
       "statsSendPeriodInSeconds": 60,
       "customStatsSendPeriodInSeconds": 3600
     },
@@ -36,7 +37,8 @@
     "messagesRateLimits": "DEFAULT_MESSAGES_RATE_LIMIT",
     "deviceMessagesRateLimits": "DEFAULT_MESSAGES_RATE_LIMIT",
     "deviceRateLimits": "DEFAULT_TELEMETRY_RATE_LIMIT",
-    "deviceDpRateLimits": "DEFAULT_TELEMETRY_DP_RATE_LIMIT"
+    "deviceDpRateLimits": "DEFAULT_TELEMETRY_DP_RATE_LIMIT",
+    "ts": 1750348425329
   },
   "storage": {
     "type": "memory",
@@ -48,7 +50,8 @@
     "max_records_per_file": 10000,
     "data_file_path": "./data/data.db",
     "messages_ttl_check_in_hours": 1,
-    "messages_ttl_in_days": 7
+    "messages_ttl_in_days": 7,
+    "ts": 1750348425329
   },
   "grpc": {
     "enabled": false,
@@ -61,6 +64,26 @@
     "minPingIntervalWithoutDataMs": 5000
   },
   "connectors": [
+    {
+      "type": "snmp",
+      "name": "snmp-connector",
+      "configuration": "snmpConnector.json"
+    },
+    {
+      "type": "snmp",
+      "name": "snmp-connector",
+      "configuration": "snmpConnector.json"
+    },
+    {
+      "type": "snmp",
+      "name": "snmp-connector",
+      "configuration": "snmpConnector.json"
+    },
+    {
+      "type": "snmp",
+      "name": "snmp-connector",
+      "configuration": "snmpConnector.json"
+    },
     {
       "type": "snmp",
       "name": "snmp-connector",
