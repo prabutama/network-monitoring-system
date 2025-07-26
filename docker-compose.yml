@@ -14,12 +14,13 @@ services:
       - nms-net
   tb-core:
     restart: always
-    image: "thingsboard/tb-node:4.0.1.1"
+    image: "prabutama/tb-node:dev"
     ports:
       - "8080:8080"
       - "7070:7070"
       - "1883:1883"
       - "5683-5688:5683-5688/udp"
+      - "9595:9595"
     logging:
       driver: "json-file"
       options:
@@ -33,7 +34,7 @@ services:
     networks:
       - nms-net
   tb-gateway:
-    image: "thingsboard/tb-gateway:3.7-stable"
+    image: "prabutama/tb-gw:dev"
     restart: always
     ports:
       - "5000:5000"

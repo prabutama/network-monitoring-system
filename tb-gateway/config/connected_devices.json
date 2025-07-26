@@ -3,18 +3,7 @@
     "connectorId": "ed59894d-d3b3-4f56-b6ed-c715b69e0837",
     "connectorName": "snmp-connector",
     "deviceType": "networking-device",
-    "renaming": null
-  },
-  "RT-A": {
-    "connectorId": "ed59894d-d3b3-4f56-b6ed-c715b69e0837",
-    "connectorName": "snmp-connector",
-    "deviceType": "networking-device",
-    "renaming": null
-  },
-  "RT-B": {
-    "connectorId": "ed59894d-d3b3-4f56-b6ed-c715b69e0837",
-    "connectorName": "snmp-connector",
-    "deviceType": "networking-device",
+    "disconnected": false,
     "renaming": null
   }
 }

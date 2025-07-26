@@ -55,7 +55,7 @@
     "ts": 1751034885670
   },
   "grpc": {
-    "enabled": false,
+    "enabled": true,
     "serverPort": 9595,
     "keepAliveTimeMs": 10001,
     "keepAliveTimeoutMs": 5000,

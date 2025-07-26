@@ -5,7 +5,7 @@
       "deviceType": "networking-device",
       "ip": "10.10.10.1",
       "port": 161,
-      "pollPeriod": 10000,
+      "pollPeriod": 5000,
       "community": "public",
       "converter": "CustomSNMPUplinkConverter",
       "attributes": [
@@ -46,62 +46,6 @@
         {
           "key": "cpuTemperature",
           "oid": "1.3.6.1.4.1.14988.1.1.3.10.0",
-          "method": "get"
-        },
-        {
-          "key": "storageMetrics",
-          "method": "bulkwalk",
-          "oid": {
-            ".1.3.6.1.2.1.25.2.3.1.2": "hrStorageType",
-            ".1.3.6.1.2.1.25.2.3.1.3": "hrStorageDescr",
-            ".1.3.6.1.2.1.25.2.3.1.4": "hrStorageAllocationUnits",
-            ".1.3.6.1.2.1.25.2.3.1.5": "hrStorageSize",
-            ".1.3.6.1.2.1.25.2.3.1.6": "hrStorageUsed"
-          }
-        }
-      ]
-    },
-    {
-      "deviceName": "RT-CT",
-      "deviceType": "networking-device",
-      "ip": "172.18.0.4",
-      "port": 161,
-      "pollPeriod": 15000,
-      "community": "public",
-      "converter": "CustomSNMPUplinkConverter",
-      "attributes": [
-        {
-          "key": "sysDescr",
-          "method": "get",
-          "oid": ".1.3.6.1.2.1.1.1.0"
-        }
-      ],
-      "telemetry": [
-        {
-          "key": "interfaceMetrics",
-          "method": "bulkwalk",
-          "oid": {
-            ".1.3.6.1.2.1.2.2.1.2": "ifDescr",
-            ".1.3.6.1.2.1.31.1.1.1.6": "ifHCInOctets",
-            ".1.3.6.1.2.1.31.1.1.1.10": "ifHCOutOctets",
-            ".1.3.6.1.2.1.2.2.1.8": "ifOperStatus",
-            ".1.3.6.1.2.1.31.1.1.1.15": "ifHighSpeed",
-            ".1.3.6.1.2.1.2.2.1.9": "ifLastChange",
-            ".1.3.6.1.2.1.2.2.1.3": "ifType",
-            ".1.3.6.1.2.1.2.2.1.4": "ifMtu",
-            ".1.3.6.1.2.1.2.2.1.14": "ifInErrors",
-            ".1.3.6.1.2.1.2.2.1.20": "ifOutErrors",
-            ".1.3.6.1.2.1.2.2.1.13": "ifDiscards"
-          }
-        },
-        {
-          "key": "hrProcessorLoad",
-          "method": "walk",
-          "oid": ".1.3.6.1.2.1.25.3.3.1.2"
-        },
-        {
-          "key": "sysUpTime",
-          "oid": "1.3.6.1.2.1.1.3.0",
           "method": "get"
         },
         {
@@ -232,10 +176,10 @@
   ],
   "name": "snmp-connector",
   "id": "ed59894d-d3b3-4f56-b6ed-c715b69e0837",
-  "logLevel": "INFO",
-  "enableRemoteLogging": true,
-  "configVersion": "3.7.4",
   "reportStrategy": {
     "type": "ON_RECEIVED"
-  }
+  },
+  "logLevel": "INFO",
+  "enableRemoteLogging": false,
+  "configVersion": "3.7.4"
 }

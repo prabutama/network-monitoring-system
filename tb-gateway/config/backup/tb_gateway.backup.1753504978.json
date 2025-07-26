@@ -38,7 +38,7 @@
     "deviceMessagesRateLimits": "DEFAULT_MESSAGES_RATE_LIMIT",
     "deviceRateLimits": "DEFAULT_TELEMETRY_RATE_LIMIT",
     "deviceDpRateLimits": "DEFAULT_TELEMETRY_DP_RATE_LIMIT",
-    "ts": 1750485256492
+    "ts": 1751034885670
   },
   "storage": {
     "type": "memory",
@@ -51,10 +51,10 @@
     "data_file_path": "./data/data.db",
     "messages_ttl_check_in_hours": 1,
     "messages_ttl_in_days": 7,
-    "ts": 1750485256492
+    "ts": 1751034885670
   },
   "grpc": {
-    "enabled": false,
+    "enabled": true,
     "serverPort": 9595,
     "keepAliveTimeMs": 10001,
     "keepAliveTimeoutMs": 5000,
@@ -64,11 +64,6 @@
     "minPingIntervalWithoutDataMs": 5000
   },
   "connectors": [
-    {
-      "type": "snmp",
-      "name": "snmp-connector",
-      "configuration": "snmpConnector.json"
-    },
     {
       "type": "snmp",
       "name": "snmp-connector",

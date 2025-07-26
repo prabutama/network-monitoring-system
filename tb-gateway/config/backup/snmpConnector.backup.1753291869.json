@@ -62,11 +62,11 @@
       ]
     },
     {
-      "deviceName": "RT-CT",
+      "deviceName": "RT-A",
       "deviceType": "networking-device",
       "ip": "10.10.10.155",
       "port": 161,
-      "pollPeriod": 15000,
+      "pollPeriod": 5000,
       "community": "public",
       "converter": "CustomSNMPUplinkConverter",
       "attributes": [
@@ -118,11 +118,11 @@
       ]
     },
     {
-      "deviceName": "RT-GNS1",
+      "deviceName": "RT-B",
       "deviceType": "networking-device",
-      "ip": "192.168.122.8",
+      "ip": "10.10.10.156",
       "port": 161,
-      "pollPeriod": 17000,
+      "pollPeriod": 6000,
       "community": "public",
       "converter": "CustomSNMPUplinkConverter",
       "attributes": [
@@ -176,10 +176,10 @@
   ],
   "name": "snmp-connector",
   "id": "ed59894d-d3b3-4f56-b6ed-c715b69e0837",
-  "logLevel": "INFO",
-  "enableRemoteLogging": true,
-  "configVersion": "3.7.4",
   "reportStrategy": {
     "type": "ON_RECEIVED"
-  }
+  },
+  "logLevel": "INFO",
+  "enableRemoteLogging": false,
+  "configVersion": "3.7.4"
 }

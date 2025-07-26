@@ -62,11 +62,11 @@
       ]
     },
     {
-      "deviceName": "RT-CT",
+      "deviceName": "RT-A",
       "deviceType": "networking-device",
-      "ip": "172.18.0.4",
+      "ip": "10.10.10.155",
       "port": 161,
-      "pollPeriod": 15000,
+      "pollPeriod": 5000,
       "community": "public",
       "converter": "CustomSNMPUplinkConverter",
       "attributes": [
@@ -118,11 +118,11 @@
       ]
     },
     {
-      "deviceName": "RT-GNS1",
+      "deviceName": "RT-B",
       "deviceType": "networking-device",
-      "ip": "192.168.122.8",
+      "ip": "10.10.10.156",
       "port": 161,
-      "pollPeriod": 17000,
+      "pollPeriod": 6000,
       "community": "public",
       "converter": "CustomSNMPUplinkConverter",
       "attributes": [
